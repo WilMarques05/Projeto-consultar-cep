@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textLogradouro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Logradouro"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoLogradouro" />
+
+    <TextView
+        android:id="@+id/textEstaticoEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textEstaticoUf"
+        app:layout_constraintStart_toStartOf="@+id/textEstado"
+        app:layout_constraintTop_toTopOf="@+id/textEstaticoUf"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rio Grande do Sul"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textUf"
+        app:layout_constraintStart_toStartOf="@+id/textDdd"
+        app:layout_constraintTop_toTopOf="@+id/textUf"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="UF"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoUf" />
+
+    <TextView
+        android:id="@+id/textEstaticoUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="UF:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLocalidade" />
+
+    <TextView
+        android:id="@+id/textEstaticoLocalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Localidade:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBairro" />
+
+    <TextView
+        android:id="@+id/textLocalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Localidade"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoLocalidade" />
+
+    <TextView
+        android:id="@+id/textEstaticoDdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="DDD:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textEstaticoRegiao"
+        app:layout_constraintStart_toEndOf="@+id/textEstaticoRegiao"
+        app:layout_constraintTop_toTopOf="@+id/textEstaticoRegiao" />
+
+    <TextView
+        android:id="@+id/textDdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DDD"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textRegiao"
+        app:layout_constraintStart_toStartOf="@+id/textEstaticoDdd"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoRegiao"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textEstaticoRegiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Região:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUf" />
+
+    <TextView
+        android:id="@+id/textRegiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Região"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoRegiao" />
+
+    <TextView
+        android:id="@+id/textEstaticoBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Bairro:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogradouro" />
+
+    <TextView
+        android:id="@+id/textBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Bairro"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoBairro" />
+
+    <TextView
+        android:id="@+id/textEstaticoLogradouro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Logradouro:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCep" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutCep"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E80D0D"
+            android:hint="Digite seu CEP"
+            android:inputType="number"
+            android:shadowColor="#E60C0C" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo2" />
+
+    <TextView
+        android:id="@+id/textEstaticoCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="CEP Digitado:"
+        android:textColor="@color/azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutCep" />
+
+    <TextView
+        android:id="@+id/textCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="CEP Digitado"
+        android:textColor="@color/laranja"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEstaticoCep" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/azul_escuro"
+        android:textSize="8sp"
+        app:icon="@drawable/ic_search_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputLayoutCep"
+        app:layout_constraintStart_toEndOf="@+id/inputLayoutCep"
+        app:layout_constraintTop_toTopOf="@+id/inputLayoutCep"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
